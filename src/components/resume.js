@@ -1,9 +1,13 @@
 import React from 'react';
+import Pdf from './resume.pdf'
 
 class Resume extends React.Component {
     render() {
         return (
-            <div><h1>Resume Page</h1></div>
+            <div>
+                <a href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a>
+            </div>
+
         )
     }
 }

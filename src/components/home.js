@@ -1,7 +1,8 @@
 import React from 'react';
 import { Grid, Cell } from 'react-mdl';
+import Pdf from './resume.pdf'
 
-class Landing extends React.Component {
+class Home extends React.Component {
     render() {
         return (
             <div style={{ width: '100%', margin: 'auto' }}>
@@ -17,16 +18,17 @@ class Landing extends React.Component {
                             <hr />
 
                             <p>Hi, I'm Pankeel. I'm a Computer Science student at the University of Minnesota Twin Cities.</p>
+                            <a href={Pdf} target="_blank" rel="noopener noreferrer">Download Pdf</a>
 
                             <div className="social-links">
 
                                 {/* LinkedIn*/}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://www.linkedin.com/in/pankeelshah" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-linkedin-square" aria-hidden="true" />
                                 </a>
 
                                 {/* GitHub*/}
-                                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <a href="https://github.com/pankeelshah" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-github-square" aria-hidden="true" />
                                 </a>
                             </div>
@@ -40,4 +42,4 @@ class Landing extends React.Component {
     }
 }
 
-export default Landing;
+export default Home;
