@@ -20,7 +20,7 @@ class Contact extends Component {
                                 </ListItem>
 
                                 <ListItem>
-                                    <ListItemContent style={{ fontSize: '30px', fontFamily: 'Anton' }}>
+                                    <ListItemContent style={{ fontSize: '30px', fontFamily: 'Anton', textAlign: "center" }}>
                                         <i className="fa fa-envelope" aria-hidden="true" />
                                         shahx317@umn.edu
                                     </ListItemContent>

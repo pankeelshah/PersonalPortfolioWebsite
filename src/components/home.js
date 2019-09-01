@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Cell } from 'react-mdl';
-import Pdf from './resume.pdf'
+
 
 class Home extends React.Component {
     render() {
@@ -18,8 +18,6 @@ class Home extends React.Component {
                             <hr />
 
                             <p>Hi, I'm Pankeel. I'm a Computer Science student at the University of Minnesota Twin Cities.</p>
-                            <a href={Pdf} target="_blank" rel="noopener noreferrer">Download Pdf</a>
-
                             <div className="social-links">
 
                                 {/* LinkedIn*/}
