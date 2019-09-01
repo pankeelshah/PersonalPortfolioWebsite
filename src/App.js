@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom';
 
 
 class App extends React.Component {
+
+  hideToggle() {
+    var selectorId = document.querySelector('.mdl-layout');
+    selectorId.MaterialLayout.toggleDrawer();
+  }
   render() {
     return (
       <div className="demo-big-content">
@@ -18,12 +23,12 @@ class App extends React.Component {
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Header>
-          <Drawer>
+          <Drawer title="">
             <Navigation>
-              <Link to="/">Home</Link>
-              <Link to="/resume">Resume</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
+              <Link to="/" onClick={() => this.hideToggle()}>Home</Link>
+              <Link to="/resume" onClick={() => this.hideToggle()}>Resume</Link>
+              <Link to="/projects" onClick={() => this.hideToggle()}>Projects</Link>
+              <Link to="/contact" onClick={() => this.hideToggle()}>Contact</Link>
             </Navigation>
           </Drawer>
           <Content>
