@@ -8,12 +8,8 @@ class Home extends React.Component {
             <div style={{ width: '100%', margin: 'auto' }}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
-                        <img
-                            src="https://pbs.twimg.com/profile_images/831993825635745796/HnVmB0-k_400x400.jpg"
-                            alt="avatar"
-                            className="avatar-img"
-                        />
-                        <div className="banner-text">
+
+                        <div className="banner-text" style={{ marginTop: '10%' }}>
                             <h1>Pankeel Shah</h1>
                             <hr />
 

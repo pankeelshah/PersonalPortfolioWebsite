@@ -54,6 +54,10 @@
   margin: auto;
 }
 
+.contact-list {
+  justify-content: center;
+}
+
 .contact-list i {
   font-size: 66px;
   padding-right: 5rem;
