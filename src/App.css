@@ -2,8 +2,10 @@
   background: #373B44;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  
+}
+
+.test {
+  font-weight: "bold";
 }
 
 .landing-grid {
@@ -18,9 +20,14 @@
   height: 100%;
 }
 
+.projects-grid {
+  display: flex;
+}
+
 /* contact page css */
 
 .contact-body {
+
   margin: auto;
   position: fixed;
   width: 100%;
@@ -30,6 +37,7 @@
 }
 
 .contact-grid {
+  
   text-align: center;
   justify-content: center;
   width: 80%;
@@ -37,6 +45,13 @@
   background: white;
   color: black;
   margin-bottom: 20px;
+}
+
+.contact-list {
+  justify-content: right;
+  text-align: center;
+  margin-left: '50%';
+  padding-left: 12em;
 }
 
 .contact-grid h2 {
@@ -48,21 +63,11 @@
   font-weight: bold;
 }
 
-.contact-grid hr {
-  border-top: 5px dotted black;
-  width: 50%;
-  margin: auto;
-}
-
-.contact-list {
-  justify-content: center;
-}
-
 .contact-list i {
   font-size: 66px;
   padding-right: 5rem;
+  
 }
-
 
 /* contact page css */
 
@@ -86,7 +91,7 @@
 }
 
 .banner-text hr {
-  border-top: 5px dotted white;
+  border-top: 5px solid white;
   width: 50%;
   margin: auto;
 }
@@ -108,4 +113,21 @@
   color: white;
   font-size: 5em;
   padding: 8px;
+}
+
+.card{
+  width: 20rem;
+}
+.card:hover{
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+  fill: red;
+}
+
+.card-body{
+  padding: 3rm 0 !important;
+}
+
+.card-text{
+  font-size: 0.9rem;
+  padding: 0.4rem;
 }

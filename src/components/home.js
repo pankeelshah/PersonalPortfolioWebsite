@@ -12,8 +12,8 @@ class Home extends React.Component {
                         <div className="banner-text" style={{ marginTop: '10%' }}>
                             <h1>Pankeel Shah</h1>
                             <hr />
-
                             <p>Hi, I'm Pankeel. I'm a Computer Science student at the University of Minnesota Twin Cities.</p>
+
                             <div className="social-links">
 
                                 {/* LinkedIn*/}

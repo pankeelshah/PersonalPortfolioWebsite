@@ -9,7 +9,7 @@ class Contact extends Component {
                 <Grid className="contact-grid">
                     <Cell col={6}>
                         <h2>Contact Me</h2>
-                        <hr />
+
                         <div className="contact-list">
                             <List>
                                 <ListItem>
@@ -25,7 +25,6 @@ class Contact extends Component {
                                         shahx317@umn.edu
                                     </ListItemContent>
                                 </ListItem>
-
                             </List>
                         </div>
                     </Cell>

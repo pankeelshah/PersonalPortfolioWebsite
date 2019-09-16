@@ -13,30 +13,30 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className="demo-big-content">
-        <Layout>
-          <Header className="header-color" title="" scroll>
-            <Navigation>
-              <Link to="/">Home</Link>
-              <a href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation>
-          </Header>
-          <Drawer title="">
-            <Navigation>
-              <Link to="/" onClick={() => this.hideToggle()}>Home</Link>
-              <Link to="/resume" onClick={() => this.hideToggle()}>Resume</Link>
-              <Link to="/projects" onClick={() => this.hideToggle()}>Projects</Link>
-              <Link to="/contact" onClick={() => this.hideToggle()}>Contact</Link>
-            </Navigation>
-          </Drawer>
-          <Content>
-            <div className="page-content" />
-            <Main />
-          </Content>
-        </Layout>
-      </div>
+
+      <Layout>
+        <Header className="header-color" scroll>
+          <Navigation>
+            <Link to="/">Home</Link>
+            <a href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a>
+            <Link to="/projects">Projects</Link>
+            <Link to="/contact">Contact</Link>
+          </Navigation>
+        </Header>
+        <Drawer title="">
+          <Navigation>
+            <Link to="/" onClick={() => this.hideToggle()}>Home</Link>
+            <a href={Pdf} target="_blank" rel="noopener noreferrer" onClick={() => this.hideToggle()}>Resume</a>
+            <Link to="/projects" onClick={() => this.hideToggle()}>Projects</Link>
+            <Link to="/contact" onClick={() => this.hideToggle()}>Contact</Link>
+          </Navigation>
+        </Drawer>
+        <Content>
+          <div className="page-content" />
+          <Main />
+        </Content>
+      </Layout>
+
     );
   }
 }
