@@ -12,15 +12,17 @@ class Projects extends Component {
                <img alt={projects.title} src={projectImage} />
                <div className="overlay">
                   <div className="portfolio-item-meta">
-                 <h5>{projects.title}</h5>
-                     <p>{projects.category}</p>
+                    <h5>{projects.title}</h5>
+                    <p>{projects.category}</p>
                   </div>
                 </div>
               <div className="link-icon"><i className="fa fa-link"></i></div>
             </a>
           </div>
         </div>
+      
       })
+      var projectsTitle = this.props.data.projectsTitle
     }
 
     return (
@@ -29,7 +31,7 @@ class Projects extends Component {
 
           <div className="twelve columns collapsed">
 
-              <h1>Check Out Some of My Projects.</h1>
+              <h1>{projectsTitle}</h1>
 
               <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
                   {projects}

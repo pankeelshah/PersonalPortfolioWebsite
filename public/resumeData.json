@@ -1,28 +1,21 @@
 {
   "main": {
     "name":"Pankeel Shah",
-    "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "description":"I'm a senior studying Computer Science at the University of Minnesota Twin Cities, looking at opportunities for Summer 2021.",
     "image":"profilepic.jpg",
-    "bio":"write stuff about me here",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
-    "address":{
-      "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
-    },
+    "bio":"Hello! I'm Pankeel, a Computer Science student at the University of Minnesota Twin Cities.",
+    "contactTitle":"Get In Touch",
+    "contactMessage":"desperate for job, hook me up plz",
     "resumedownload":"Pankeel_Shah_Resume.pdf",
     "social":[
       {
         "name":"facebook",
-        "url":"http://facebook.com/",
+        "url":"http://facebook.com/pankeelshah99",
         "className":"fa fa-facebook"
       },
       {
         "name":"twitter",
-        "url":"http://twitter.com",
+        "url":"http://twitter.com/PankeelShah1",
         "className":"fa fa-twitter"
       },
       {
@@ -32,12 +25,12 @@
       },
       {
         "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
+        "url":"http://instagram.com/pankeelshah",
         "className":"fa fa-instagram"
       },
       {
         "name":"github",
-        "url":"http://github.com/tbakerx",
+        "url":"http://github.com/pankeelshah",
         "className":"fa fa-github"
       },
       {
@@ -84,35 +77,32 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
+        "title":"test",
+        "category":"test",
         "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "url":"http://www.google.com"
+      },{
+        "title":"test",
+        "category":"test",
+        "image":"smirkspace.jpg",
+        "url":"http://www.google.com"
+      },{
+        "title":"test",
+        "category":"test",
+        "image":"smirkspace.jpg",
+        "url":"http://www.google.com"
+      },{
+        "title":"test",
+        "category":"test",
+        "image":"smirkspace.jpg",
+        "url":"http://www.google.com"
+      },{
+        "title":"test",
+        "category":"test",
+        "image":"smirkspace.jpg",
+        "url":"http://www.google.com"
       }
-    ]
+    ],
+    "projectsTitle":"Check out my work."
   }
 }
