@@ -1,78 +1,45 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-
 
 class Projects extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { activeTab: 0 };
-    }
+  render() {
 
-    toggleCategories() {
-
-        if (this.state.activeTab === 0) {
-            return (
-                <div className="projects-grid">
-                    {/* Project 1 */}
-                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover' }} >React Project #1</CardTitle>
-                        <CardText>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-                        <CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>CodePen</Button>
-                            <Button colored>Live Demo</Button>
-                        </CardActions>
-                        <CardMenu style={{ color: '#fff' }}>
-                            <IconButton name="share" />
-                        </CardMenu>
-                    </Card>
-                    {/* Project 2 */}
-                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover' }} >React Project #2</CardTitle>
-                        <CardText>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-                        <CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>CodePen</Button>
-                            <Button colored>Live Demo</Button>
-                        </CardActions>
-                        <CardMenu style={{ color: '#fff' }}>
-                            <IconButton name="share" />
-                        </CardMenu>
-                    </Card>
-                    {/* Project 3 */}
-                    <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                        <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover' }} >React Project #3</CardTitle>
-                        <CardText>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-                        <CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>CodePen</Button>
-                            <Button colored>Live Demo</Button>
-                        </CardActions>
-                        <CardMenu style={{ color: '#fff' }}>
-                            <IconButton name="share" />
-                        </CardMenu>
-                    </Card>
+    if(this.props.data){
+      var projects = this.props.data.projects.map(function(projects){
+        var projectImage = 'images/portfolio/'+projects.image;
+        return <div key={projects.title} className="columns portfolio-item">
+           <div className="item-wrap">
+            <a href={projects.url} target="_blank" title={projects.title}>
+               <img alt={projects.title} src={projectImage} />
+               <div className="overlay">
+                  <div className="portfolio-item-meta">
+                 <h5>{projects.title}</h5>
+                     <p>{projects.category}</p>
+                  </div>
                 </div>
-            )
-        }
+              <div className="link-icon"><i className="fa fa-link"></i></div>
+            </a>
+          </div>
+        </div>
+      })
     }
-    render() {
-        return (
-            <div>
 
-                <Grid>
-                    <Cell col={12}>
-                        <div className="content">{this.toggleCategories()}</div>
-                    </Cell>
-                </Grid>
+    return (
+      <section id="portfolio">
+
+      <div className="row">
+
+         <div className="twelve columns collapsed">
+
+            <h1>Check Out Some of My Projects.</h1>
+
+            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+                {projects}
             </div>
-        )
-    }
+          </div>
+      </div>
+   </section>
+    );
+  }
 }
+
 export default Projects;

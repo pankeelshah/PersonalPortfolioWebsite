@@ -1,42 +1,57 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ReactGA from 'react-ga';
+import $ from 'jquery';
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './components/main';
-import { Link } from 'react-router-dom';
-import Pdf from './components/resume.pdf'
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import About from './Components/About';
+import Resume from './Components/Resume';
+import Contact from './Components/Contact';
+import Portfolio from './Components/Projects';
 
-class App extends React.Component {
+class App extends Component {
 
-  hideToggle() {
-    var selectorId = document.querySelector('.mdl-layout');
-    selectorId.MaterialLayout.toggleDrawer();
+  constructor(props){
+    super(props);
+    this.state = {
+      foo: 'bar',
+      resumeData: {}
+    };
+
+    ReactGA.initialize('UA-110570651-1');
+    ReactGA.pageview(window.location.pathname);
+
   }
+
+  getResumeData(){
+    $.ajax({
+      url:'/resumeData.json',
+      dataType:'json',
+      cache: false,
+      success: function(data){
+        this.setState({resumeData: data});
+      }.bind(this),
+      error: function(xhr, status, err){
+        console.log(err);
+        alert(err);
+      }
+    });
+  }
+
+  componentDidMount(){
+    this.getResumeData();
+  }
+
   render() {
     return (
-
-      <Layout>
-        <Header className="header-color" scroll>
-          <Navigation>
-            <Link to="/">Home</Link>
-            <a href={Pdf} target="_blank" rel="noopener noreferrer">Resume</a>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
-          </Navigation>
-        </Header>
-        <Drawer title="">
-          <Navigation>
-            <Link to="/" onClick={() => this.hideToggle()}>Home</Link>
-            <a href={Pdf} target="_blank" rel="noopener noreferrer" onClick={() => this.hideToggle()}>Resume</a>
-            <Link to="/projects" onClick={() => this.hideToggle()}>Projects</Link>
-            <Link to="/contact" onClick={() => this.hideToggle()}>Contact</Link>
-          </Navigation>
-        </Drawer>
-        <Content>
-          <div className="page-content" />
-          <Main />
-        </Content>
-      </Layout>
-
+      <div className="App">
+        <Header data={this.state.resumeData.main}/>
+        <About data={this.state.resumeData.main}/>
+        <Resume data={this.state.resumeData.resume}/>
+        <Portfolio data={this.state.resumeData.portfolio}/>
+        <Contact data={this.state.resumeData.main}/>
+        <Footer data={this.state.resumeData.main}/>
+      </div>
     );
   }
 }
