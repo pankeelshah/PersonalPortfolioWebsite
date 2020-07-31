@@ -4,6 +4,7 @@ class Contact extends Component {
   render() {
 
     if(this.props.data){
+      var title = this.props.data.contactTitle;
       var message = this.props.data.contactMessage;
     }
 
@@ -11,9 +12,8 @@ class Contact extends Component {
       <section id="contact">
 
          <div className="row section-head">
+            <h1>{title}</h1>
             <p className="lead">{message}</p>
-            <h1>test</h1>
-            <h4>test</h4>
          </div>
 
       </section>

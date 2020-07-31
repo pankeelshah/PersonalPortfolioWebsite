@@ -3,9 +3,11 @@
     "name":"Pankeel Shah",
     "description":"I'm a senior studying Computer Science at the University of Minnesota Twin Cities, looking at opportunities for Summer 2021.",
     "image":"profilepic.jpg",
-    "bio":"Hello! I'm Pankeel, a Computer Science student at the University of Minnesota Twin Cities.",
-    "contactTitle":"Get In Touch",
-    "contactMessage":"desperate for job, hook me up plz",
+    "bio":"Hi, I'm Pankeel!",
+    "bio2":"I like building awesome software. I've built websites, apps, corporate software and even games! If you are interested, you can view some of my favorite projects in my portfolio down below. Need something built or simply want to have chat? Reach out to me on social media or send me an email.",
+    "bio3":"When I'm not coding my next project, I enjoy spending my time watching Netflix, working out, hanging out with friends, and meeting new people.",
+    "contactTitle":"Let's Connect!",
+    "contactMessage":"My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
     "resumedownload":"Pankeel_Shah_Resume.pdf",
     "social":[
       {
@@ -44,7 +46,7 @@
     "education":[
       {
         "school":"University of Minnesota Twin Cities",
-        "degree":"Bachelors in Computer Science",
+        "degree":"Computer Science, B.S.",
         "graduated":"Expected May 2021",
         "description":"Experience at school"
       }
@@ -103,6 +105,6 @@
         "url":"http://www.google.com"
       }
     ],
-    "projectsTitle":"Check out my work."
+    "projectsTitle":"Check out some of my work."
   }
 }

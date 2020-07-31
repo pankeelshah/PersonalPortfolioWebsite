@@ -6,6 +6,8 @@ class About extends Component {
     if(this.props.data){
       var profilepic= "images/"+this.props.data.image;
       var bio = this.props.data.bio;
+      var bio2 = this.props.data.bio2;
+      var bio3 = this.props.data.bio3;
       var resumeDownload = this.props.data.resumedownload;
     }
 
@@ -18,6 +20,8 @@ class About extends Component {
             <div className="nine columns main-col">
                <h2>About Me</h2>
                <p>{bio}</p>
+               <p>{bio2}</p>
+               <p>{bio3}</p>
                <div className="row">
                   <div className="columns download">
                      <p>
