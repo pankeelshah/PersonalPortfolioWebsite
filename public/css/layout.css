@@ -204,7 +204,7 @@ ul#nav li.current a { color: #F06000; }
 #about p {
    /* line-height: 30px; */
    color: #7A7A7A;
-   margin-bottom: 15px;
+   margin-bottom: 10px;
 }
 #about .profile-pic {
    position: relative;
@@ -258,6 +258,10 @@ ul#nav li.current a { color: #F06000; }
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
+
+#resume p {
+   margin-bottom: 10px;
+} 
 
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }

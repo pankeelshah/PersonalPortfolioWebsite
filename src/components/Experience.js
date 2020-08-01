@@ -19,6 +19,8 @@ class Experience extends Component {
       //   var className = 'bar-expand '+skills.name.toLowerCase();
       //   return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
       // })
+      var classes = this.props.data.classes.map(element => <li>{element}</li>)
+      
     }
 
     return (
@@ -33,6 +35,7 @@ class Experience extends Component {
               <div className="row item">
                 <div className="twelve columns">
                   {education}
+                  <ul>{classes}</ul>
                 </div>
               </div>
           </div>

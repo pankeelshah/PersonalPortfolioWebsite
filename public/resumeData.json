@@ -48,7 +48,7 @@
         "school":"University of Minnesota Twin Cities",
         "degree":"Computer Science, B.S.",
         "graduated":"Expected May 2021",
-        "description":"Experience at school"
+        "description": "Relevent Coursework:"
       }
     ],
     "work":[
@@ -62,7 +62,7 @@
         "company":"Medtronic",
         "title":"Software Engineering Intern",
         "years":"May 2019 - August 2019",
-        "description":"Describe work"
+        "description":"Worked as part of a Verification Testing Scrum Team, developing automated tests using .NET and Selenium to validate requirements for the CareLink Network."
       }
     ],
     "skills":[
@@ -74,7 +74,8 @@
         "name":"Java",
         "level":"55%"
       }
-    ]
+    ],
+    "classes":["Data Structures and Algorithms", "User Interface Design, Implementation and Evaluation", "Internet Programming", "Introduction to Artificial Intelligence", "Computer Vision", "Software Engineering I", "Program Design and Development", "Animation and Planning in Games", "Programing Interactive Computer Graphics and Games", "Introduction to Operating Systems", "Discrete Structures of Computer Science"]
   },
   "portfolio":{
     "projects": [
