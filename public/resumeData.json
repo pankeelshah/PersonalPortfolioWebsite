@@ -79,7 +79,7 @@
         "level":"55%"
       }
     ],
-    "classes":["Data Structures and Algorithms", "User Interface Design, Implementation and Evaluation", "Internet Programming", "Introduction to Artificial Intelligence", "Computer Vision", "Practice of Database Systems", "Software Engineering I", "Program Design and Development", "Animation and Planning in Games", "Programing Interactive Computer Graphics and Games", "Introduction to Operating Systems", "Discrete Structures of Computer Science"]
+    "classes":["Algorithms and Data Structures", "User Interface Design, Implementation and Evaluation", "Internet Programming", "Introduction to Artificial Intelligence", "Computer Vision", "Practice of Database Systems", "Software Engineering I", "Program Design and Development", "Animation and Planning in Games", "Programing Interactive Computer Graphics and Games", "Introduction to Operating Systems", "Discrete Structures of Computer Science"]
   },
   "portfolio":{
     "projects": [
