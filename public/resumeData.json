@@ -56,13 +56,17 @@
         "company":"Target",
         "title":"Software Engineering Intern",
         "years":"June 2020 - August 2020",
-        "description":"Describe work"
+        "description":"Modernized store procedures for barcodes by developing Springboot and Kotlin microservices",
+        "description2": "Deployed a Praxis UI allowing the generation and interpretation of random weight barcodes",
+        "description3": "Engineered unit and integration tests using Spock and Groovy to verify application functionality"
       },
       {
         "company":"Medtronic",
         "title":"Software Engineering Intern",
         "years":"May 2019 - August 2019",
-        "description":"Worked as part of a Verification Testing Scrum Team, developing automated tests using .NET and Selenium to validate requirements for the CareLink Network."
+        "description":"Worked as part of a Verification Testing Scrum Team, developing automated tests using .NET and Selenium to validate requirements for the CareLink Network",
+        "description2":"Designed and managed human-readable acceptance tests using SpecFlow ",
+        "description3": "Raised issues and collaborated with developers to ensure that website requirements are satisfied"
       }
     ],
     "skills":[
@@ -75,7 +79,7 @@
         "level":"55%"
       }
     ],
-    "classes":["Data Structures and Algorithms", "User Interface Design, Implementation and Evaluation", "Internet Programming", "Introduction to Artificial Intelligence", "Computer Vision", "Software Engineering I", "Program Design and Development", "Animation and Planning in Games", "Programing Interactive Computer Graphics and Games", "Introduction to Operating Systems", "Discrete Structures of Computer Science"]
+    "classes":["Data Structures and Algorithms", "User Interface Design, Implementation and Evaluation", "Internet Programming", "Introduction to Artificial Intelligence", "Computer Vision", "Practice of Database Systems", "Software Engineering I", "Program Design and Development", "Animation and Planning in Games", "Programing Interactive Computer Graphics and Games", "Introduction to Operating Systems", "Discrete Structures of Computer Science"]
   },
   "portfolio":{
     "projects": [
