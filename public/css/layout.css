@@ -826,8 +826,8 @@ call-to-action .button {
 }
 #contact p.lead {
    font: 24px/48px 'opensans-light', sans-serif;
-   margin-right: 200px;
-   margin-left: 200px;
+   /* margin-right: 200px;
+   margin-left: 200px; */
 }
 
 #contact .header-col { padding-top: 6px; }
