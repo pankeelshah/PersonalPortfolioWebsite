@@ -84,30 +84,15 @@
   "portfolio":{
     "projects": [
       {
-        "title":"test",
-        "category":"test",
-        "image":"smirkspace.jpg",
-        "url":"http://www.google.com"
+        "title":"RecoverPlaysTV",
+        "category":"Website created to help users recover PlaysTV clips that were lost after the shutdown.",
+        "image":"recoverplaystv.jpg",
+        "url":"https://www.recoverplaystv.com/"
       },{
-        "title":"test",
-        "category":"test",
-        "image":"smirkspace.jpg",
-        "url":"http://www.google.com"
-      },{
-        "title":"test",
-        "category":"test",
-        "image":"smirkspace.jpg",
-        "url":"http://www.google.com"
-      },{
-        "title":"test",
-        "category":"test",
-        "image":"smirkspace.jpg",
-        "url":"http://www.google.com"
-      },{
-        "title":"test",
-        "category":"test",
-        "image":"smirkspace.jpg",
-        "url":"http://www.google.com"
+        "title":"WECharity - MN",
+        "category":"Website created to help marketing efforts for University of Minnesota nonprofit.",
+        "image":"wecharitymn.png",
+        "url":"https://wecharitymn.herokuapp.com/"
       }
     ],
     "projectsTitle":"Check out some of my work."
