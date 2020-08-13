@@ -2,7 +2,7 @@
 This is a ReactJS based personal resume website template. I have built this by beginning with the Ceevee template by Styleshout (credits also below), and breaking up their template into isolated React components. Data is fed directly from a JSON File. This means that in its final form, it can be customized by simply by filling in their own personal info into the JSON file and the changes will be dynamically fed into the site.
 
 ## Deployment
-http://pankeelshah.tech/
+https://pankeelshah.tech/
 
 ## Credits
 #### HTML Design Template
