@@ -91,8 +91,18 @@
       },{
         "title":"WECharity - MN",
         "category":"Website created to help marketing efforts for University of Minnesota nonprofit.",
-        "image":"wecharitymn.png",
+        "image":"wecharitymn.jpg",
         "url":"https://wecharitymn.herokuapp.com/"
+      },{
+        "title":"Flappy Bird AI",
+        "category":"Recreated Flappy Bird and created an ai that uses neuroevolution to obtain high scores.",
+        "image":"flappybird.jpg",
+        "url":"https://github.com/pankeelshah/FlappyBirdAI"
+      },{
+        "title":"Tic Tac Toe",
+        "category":"Tic Tac Toe app created using React Native.",
+        "image":"tictactoe.jpg",
+        "url":"https://github.com/pankeelshah/TicTacToe"
       }
     ],
     "projectsTitle":"Check out some of my work."
