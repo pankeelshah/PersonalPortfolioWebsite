@@ -2,4 +2,4 @@
 This is a ReactJS based personal resume website.
 
 ## Deployment
-https://pankeelshah.tech/
+https://pankeelshah.com/
