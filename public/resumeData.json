@@ -55,7 +55,7 @@
       {
         "company":"Target",
         "title":"Software Engineering Intern",
-        "years":"June 2020 - August 2020",
+        "years":"June 2020 - Present",
         "description":"Modernized store procedures for barcodes by developing Springboot and Kotlin microservices",
         "description2": "Deployed a Praxis UI allowing the generation and interpretation of random weight barcodes",
         "description3": "Engineered unit and integration tests using Spock and Groovy to verify application functionality"
