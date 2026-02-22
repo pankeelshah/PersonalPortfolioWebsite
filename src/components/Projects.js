@@ -1,46 +1,60 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
+import { fadeUp } from '../constants';
 
-class Projects extends Component {
-  render() {
+export default function Projects({ data }) {
+  if (!data) return null;
+  const { projects = [], projectsTitle } = data;
 
-    if(this.props.data){
-      var projects = this.props.data.projects.map(function(projects){
-        var projectImage = 'images/portfolio/'+projects.image;
-        return <div key={projects.title} className="columns portfolio-item">
-           <div className="item-wrap">
-            <a href={projects.url} target="_blank" title={projects.title}>
-               <img alt={projects.title} src={projectImage} />
-               <div className="overlay">
-                  <div className="portfolio-item-meta">
-                    <h5>{projects.title}</h5>
-                    <p>{projects.category}</p>
-                  </div>
+  return (
+    <section id="portfolio" className="section-surface">
+      <div className="blob blob-projects" />
+
+      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+        <motion.div initial="hidden" whileInView="visible"
+          viewport={{ once: true, margin: '-80px' }} variants={fadeUp}>
+          <p className="section-label">Portfolio</p>
+          <h2 className="section-title">{projectsTitle || "Things I've Built"}</h2>
+        </motion.div>
+
+        <div id="portfolio-wrapper" className="projects-grid">
+          {projects.map((project, i) => (
+            <motion.a
+              key={project.title}
+              href={project.url} target="_blank" rel="noopener noreferrer"
+              initial="hidden" whileInView="visible"
+              viewport={{ once: true, margin: '-40px' }}
+              variants={fadeUp} custom={i}
+              className="portfolio-item"
+              whileHover={{ y: -5 }}
+            >
+              {/* Thumbnail */}
+              <div className="item-wrap">
+                <img
+                  alt={project.title}
+                  src={`images/portfolio/${project.image}`}
+                  className="project-img"
+                />
+                <div className="overlay">
+                  <ExternalLink size={30} color="#fff" />
                 </div>
-              <div className="link-icon"><i className="fa fa-link"></i></div>
-            </a>
-          </div>
-        </div>
-      
-      })
-      var projectsTitle = this.props.data.projectsTitle
-    }
-
-    return (
-      <section id="portfolio">
-        <div className="row">
-
-          <div className="twelve columns collapsed">
-
-              <h1>{projectsTitle}</h1>
-
-              <div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
-                  {projects}
               </div>
-            </div>
-        </div>
-    </section>
-    );
-  }
-}
 
-export default Projects;
+              {/* Info */}
+              <div className="portfolio-item-meta">
+                <h5 className="project-title">{project.title}</h5>
+                <p className="project-desc">{project.category}</p>
+                {project.tech?.length > 0 && (
+                  <div className="tag-row">
+                    {project.tech.map(t => <span key={t} className="tech-tag">{t}</span>)}
+                  </div>
+                )}
+              </div>
+            </motion.a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

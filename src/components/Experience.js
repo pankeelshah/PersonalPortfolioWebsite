@@ -1,80 +1,107 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Briefcase, GraduationCap } from 'lucide-react';
+import { fadeUp } from '../constants';
 
-class Experience extends Component {
-  render() {
-
-    if(this.props.data){
-      var education = this.props.data.education.map(function(education){
-        return <div key={education.school}><h3>{education.school}</h3>
-        <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
-        <p>{education.description}</p>
+function TimelineItem({ icon: Icon, children, index }) {
+  return (
+    <motion.div
+      className="timeline-item"
+      initial="hidden" whileInView="visible"
+      viewport={{ once: true, margin: '-50px' }}
+      variants={fadeUp} custom={index}
+    >
+      {/* Icon + connecting line */}
+      <div className="timeline-icon-col">
+        <div className="timeline-icon">
+          <Icon size={18} />
         </div>
-      })
-      var work = this.props.data.work.map(function(work){
-        return <div key={work.company}><h3>{work.company}</h3>
-            <p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em></p>
-            <p><span>&bull;</span> {work.description}</p>
-            <p><span>&bull;</span> {work.description2}</p>
-            <p><span>&bull;</span> {work.description3}</p>
-        </div>
-      })
-      // var skills = this.props.data.skills.map(function(skills){
-      //   var className = 'bar-expand '+skills.name.toLowerCase();
-      //   return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
-      // })
-      var classes = this.props.data.classes.map(element => <li><span>&bull;</span> {element}</li>)
-      
-    }
-
-    return (
-      <section id="resume">
-
-        <div className="row education">
-          <div className="three columns header-col">
-              <h1><span>Education</span></h1>
-          </div>
-
-          <div className="nine columns main-col">
-              <div className="row item">
-                <div className="twelve columns">
-                  {education}
-                  <ul>{classes}</ul>
-                </div>
-              </div>
-          </div>
-        </div>
-
-
-      <div className="row work">
-
-        <div className="three columns header-col">
-            <h1><span>Work</span></h1>
-        </div>
-
-        <div className="nine columns main-col">
-          {work}
-        </div>
-
+        <div className="timeline-line" />
       </div>
-{/* 
-      <div className="row skill">
-        <div className="three columns header-col">
-          <h1><span>Skills</span></h1>
-        </div>
-
-        <div className="nine columns main-col">
-
-          <div className="bars">
-            <ul className="skills">
-              {skills}
-            </ul>
-          </div>
-        </div>
-      </div> */}
-
-    </section>
-    );
-  }
+      {/* Card */}
+      <div style={{ paddingBottom: '8px' }}>{children}</div>
+    </motion.div>
+  );
 }
 
-export default Experience;
+function ExperienceCard({ title, subtitle, date, bullets = [], tech = [] }) {
+  return (
+    <div className="glass-card experience-card">
+      <div className="experience-card-header">
+        <h3 className="experience-company">{title}</h3>
+        <span className="experience-date">{date}</span>
+      </div>
+      <p className="experience-title">{subtitle}</p>
+
+      {bullets.length > 0 && (
+        <ul className="experience-bullets">
+          {bullets.map((b, i) => (
+            <li key={i} className="experience-bullet">
+              <span className="bullet-arrow">▸</span>
+              {b}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {tech.length > 0 && (
+        <div className="tag-row">
+          {tech.map(t => <span key={t} className="tech-tag">{t}</span>)}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function Experience({ data }) {
+  if (!data) return null;
+  const { work = [], education = [] } = data;
+
+  return (
+    <section id="resume" className="section-primary">
+      <div className="blob blob-experience" />
+
+      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+        {/* Work */}
+        <motion.div initial="hidden" whileInView="visible"
+          viewport={{ once: true, margin: '-80px' }} variants={fadeUp}>
+          <p className="section-label">Career</p>
+          <h2 className="section-title">Work Experience</h2>
+        </motion.div>
+
+        <div className="timeline-section">
+          {work.map((job, i) => (
+            <TimelineItem key={job.company} icon={Briefcase} index={i}>
+              <ExperienceCard
+                title={job.company}
+                subtitle={job.title}
+                date={job.years}
+                bullets={job.bullets}
+                tech={job.tech}
+              />
+            </TimelineItem>
+          ))}
+        </div>
+
+        {/* Education */}
+        <motion.div initial="hidden" whileInView="visible"
+          viewport={{ once: true, margin: '-80px' }} variants={fadeUp}>
+          <p className="section-label">Learning</p>
+          <h2 className="section-title">Education</h2>
+        </motion.div>
+
+        {education.map((edu, i) => (
+          <TimelineItem key={edu.school} icon={GraduationCap} index={i}>
+            <ExperienceCard
+              title={edu.school}
+              subtitle={edu.degree}
+              date={edu.graduated}
+              bullets={[edu.description]}
+              tech={[]}
+            />
+          </TimelineItem>
+        ))}
+      </div>
+    </section>
+  );
+}

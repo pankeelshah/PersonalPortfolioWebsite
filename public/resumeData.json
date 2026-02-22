@@ -1,116 +1,196 @@
 {
   "main": {
-    "name":"Pankeel Shah",
-    "description":"I'm a Computer Science student at the University of Minnesota Twin Cities, looking at opportunities for Summer 2021.",
-    "image":"profilepic.jpg",
-    "bio":"Hi, I'm Pankeel!",
-    "bio2":"I like building awesome software. I've built websites, apps, corporate software and even games! If you are interested, you can view some of my favorite projects in my portfolio down below. Need something built or simply want to have chat? Reach out to me on social media or send me an email.",
-    "bio3":"When I'm not coding my next project, I enjoy spending my time watching Netflix, working out, hanging out with friends, and meeting new people.",
-    "contactTitle":"Let's Connect!",
-    "contactMessage":"My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
-    "resumedownload":"Pankeel_Shah_Resume.pdf",
-    "social":[
+    "name": "Pankeel Shah",
+    "title": "Software Engineer",
+    "description": "I build scalable software and delightful user experiences.",
+    "image": "profilepic.jpg",
+    "bio": "Hi, I'm Pankeel!",
+    "bio2": "I'm a software engineer who loves crafting full-stack products, from intuitive frontends to robust backend services. I've shipped production code at Fortune 500 companies, built side projects that tens of thousands of people use, and I'm always hunting for the next interesting problem to solve.",
+    "bio3": "Outside of work you'll find me watching films, hitting the gym, or cooking up something new. Always happy to connect. Feel free to reach out!",
+    "contactTitle": "Let's Connect",
+    "contactMessage": "Whether you have a project in mind, a question, or simply want to say hi, my inbox is always open.",
+    "resumedownload": "Pankeel_Shah_Resume.pdf",
+    "skills": [
       {
-        "name":"facebook",
-        "url":"http://facebook.com/pankeelshah99",
-        "className":"fa fa-facebook"
+        "name": "Python",
+        "color": "#3776AB"
       },
       {
-        "name":"twitter",
-        "url":"http://twitter.com/PankeelShah1",
-        "className":"fa fa-twitter"
+        "name": "Java",
+        "color": "#ED8B00"
       },
       {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/pankeelshah",
-        "className":"fa fa-linkedin"
+        "name": "Kotlin",
+        "color": "#7F52FF"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/pankeelshah",
-        "className":"fa fa-instagram"
+        "name": "JavaScript",
+        "color": "#F7DF1E"
       },
       {
-        "name":"github",
-        "url":"http://github.com/pankeelshah",
-        "className":"fa fa-github"
+        "name": "TypeScript",
+        "color": "#3178C6"
       },
       {
-        "name":"gmail",
-        "url":"mailto: shahx317@umn.edu",
-        "className":"fa fa-envelope"
+        "name": "React",
+        "color": "#61DAFB"
+      },
+      {
+        "name": "React Native",
+        "color": "#61DAFB"
+      },
+      {
+        "name": "Spring Boot",
+        "color": "#6DB33F"
+      },
+      {
+        "name": ".NET",
+        "color": "#512BD4"
+      },
+      {
+        "name": "Selenium",
+        "color": "#43B02A"
+      },
+      {
+        "name": "SQL",
+        "color": "#F29111"
+      },
+      {
+        "name": "Git",
+        "color": "#F05032"
+      }
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "http://github.com/pankeelshah",
+        "label": "GitHub"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/pankeelshah",
+        "label": "LinkedIn"
+      },
+      {
+        "name": "twitter",
+        "url": "http://twitter.com/PankeelShah1",
+        "label": "Twitter"
+      },
+      {
+        "name": "instagram",
+        "url": "http://instagram.com/pankeelshah",
+        "label": "Instagram"
+      },
+      {
+        "name": "gmail",
+        "url": "mailto:shahx317@umn.edu",
+        "label": "Email"
       }
     ]
   },
-  "resume":{
-    "education":[
+  "resume": {
+    "education": [
       {
-        "school":"University of Minnesota Twin Cities",
-        "degree":"Computer Science, B.S.",
-        "graduated":"Expected May 2021",
-        "description": "Relevent Coursework:"
+        "school": "University of Minnesota Twin Cities",
+        "degree": "B.S. Computer Science",
+        "graduated": "May 2021",
+        "description": "Relevant coursework: Algorithms & Data Structures, User Interface Design, Internet Programming, Intro to AI, Computer Vision, Database Systems, Software Engineering, Operating Systems, Animation & Game Planning, Discrete Structures."
       }
     ],
-    "work":[
+    "work": [
       {
-        "company":"Target",
-        "title":"Software Engineering Intern",
-        "years":"June 2020 - Present",
-        "description":"Modernized store procedures for barcodes by developing Springboot and Kotlin microservices",
-        "description2": "Deployed a Praxis UI allowing the generation and interpretation of random weight barcodes",
-        "description3": "Engineered unit and integration tests using Spock and Groovy to verify application functionality"
+        "company": "Target",
+        "title": "Software Engineering Intern",
+        "years": "June 2020 – August 2020",
+        "bullets": [
+          "Modernized barcode store procedures by developing Spring Boot and Kotlin microservices",
+          "Deployed a Praxis UI enabling generation and interpretation of random-weight barcodes",
+          "Engineered unit and integration tests using Spock and Groovy to verify application functionality"
+        ],
+        "tech": [
+          "Kotlin",
+          "Spring Boot",
+          "Groovy",
+          "Spock",
+          "Praxis UI"
+        ]
       },
       {
-        "company":"Medtronic",
-        "title":"Software Engineering Intern",
-        "years":"May 2019 - August 2019",
-        "description":"Worked as part of a Verification Testing Scrum Team, developing automated tests using .NET and Selenium to validate requirements for the CareLink Network",
-        "description2":"Designed and managed human-readable acceptance tests using SpecFlow ",
-        "description3": "Raised issues and collaborated with developers to ensure that website requirements are satisfied"
+        "company": "Medtronic",
+        "title": "Software Engineering Intern",
+        "years": "May 2019 – August 2019",
+        "bullets": [
+          "Worked in a Verification Testing Scrum team, automating tests with .NET and Selenium for the CareLink Network",
+          "Designed human-readable acceptance tests using SpecFlow",
+          "Raised and tracked issues, collaborating with developers to satisfy website requirements"
+        ],
+        "tech": [
+          ".NET",
+          "Selenium",
+          "SpecFlow",
+          "C#",
+          "Agile"
+        ]
       }
-    ],
-    "skills":[
-      {
-        "name":"Python",
-        "level":"60%"
-      },
-      {
-        "name":"Java",
-        "level":"55%"
-      }
-    ],
-    "classes":["Algorithms and Data Structures", "User Interface Design, Implementation and Evaluation", "Internet Programming", "Introduction to Artificial Intelligence", "Computer Vision", "Practice of Database Systems", "Software Engineering I", "Program Design and Development", "Animation and Planning in Games", "Programing Interactive Computer Graphics and Games", "Introduction to Operating Systems", "Discrete Structures of Computer Science"]
+    ]
   },
-  "portfolio":{
+  "portfolio": {
+    "projectsTitle": "Some Things I've Built",
     "projects": [
       {
-        "title":"WECharity - MN",
-        "category":"Website created to help marketing efforts for University of Minnesota nonprofit.",
-        "image":"wecharitymn.jpg",
-        "url":"https://www.wecharitymn.com/"
+        "title": "WECharity – MN",
+        "category": "Nonprofit marketing website for a University of Minnesota charity organization.",
+        "image": "wecharitymn.jpg",
+        "url": "https://www.wecharitymn.com/",
+        "tech": [
+          "React",
+          "HTML",
+          "CSS"
+        ]
       },
       {
-        "title":"RecoverPlaysTV",
-        "category":"Website created to help users recover PlaysTV clips that were lost after the shutdown.",
-        "image":"recoverplaystv.jpg",
-        "url":"https://www.recoverplaystv.com/"
-      },{
-        "title":"Flappy Bird AI",
-        "category":"Recreated Flappy Bird and created an ai that uses neuroevolution to obtain high scores.",
-        "image":"flappybird.jpg",
-        "url":"https://github.com/pankeelshah/FlappyBirdAI"
-      },{
-        "title":"Tic Tac Toe",
-        "category":"Tic Tac Toe app created using React Native.",
-        "image":"tictactoe.jpg",
-        "url":"https://github.com/pankeelshah/TicTacToe"
-      },{
-        "title":"FortniteHub",
-        "category":"Allows users to look up Fortnite statistics, item shop and news.",
-        "image":"fortnitehub.jpg",
-        "url":"https://fortnitehub.netlify.app/"
+        "title": "RecoverPlaysTV",
+        "category": "Helps users recover PlaysTV clips lost after the platform shut down.",
+        "image": "recoverplaystv.jpg",
+        "url": "https://www.recoverplaystv.com/",
+        "tech": [
+          "JavaScript",
+          "Node.js",
+          "API"
+        ]
+      },
+      {
+        "title": "Flappy Bird AI",
+        "category": "Recreated Flappy Bird and trained an AI using neuroevolution to achieve high scores.",
+        "image": "flappybird.jpg",
+        "url": "https://github.com/pankeelshah/FlappyBirdAI",
+        "tech": [
+          "Python",
+          "NEAT",
+          "pygame"
+        ]
+      },
+      {
+        "title": "Tic-Tac-Toe",
+        "category": "Cross-platform Tic-Tac-Toe mobile app built with React Native.",
+        "image": "tictactoe.jpg",
+        "url": "https://github.com/pankeelshah/TicTacToe",
+        "tech": [
+          "React Native",
+          "JavaScript"
+        ]
+      },
+      {
+        "title": "FortniteHub",
+        "category": "Look up Fortnite player stats, item shop updates, and news in real time.",
+        "image": "fortnitehub.jpg",
+        "url": "https://fortnitehub.netlify.app/",
+        "tech": [
+          "React",
+          "Fortnite API",
+          "CSS"
+        ]
       }
-    ],
-    "projectsTitle":"Check out some of my work."
+    ]
   }
 }

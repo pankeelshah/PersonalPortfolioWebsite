@@ -1,28 +1,44 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { ArrowUp } from 'lucide-react';
+import { SOCIAL_ICON_MAP } from '../constants';
+import { Mail } from 'lucide-react';
 
-class Footer extends Component {
-  render() {
+export default function Footer({ data }) {
+  const socials = data?.social ?? [];
+  const year = new Date().getFullYear();
 
-    if(this.props.data){
-      var networks= this.props.data.social.map(function(network){
-        return <li key={network.name}><a href={network.url} target="_blank"><i className={network.className}></i></a></li>
-      })
-    }
-
-    return (
-      <footer>
-
-     <div className="row">
-        <div className="twelve columns">
-           <ul className="social-links">
-              {networks}
-           </ul>
+  return (
+    <footer className="site-footer">
+      <div className="container footer-inner">
+        {/* Branding */}
+        <div>
+          <span className="gradient-text footer-logo">PS</span>
+          <span className="footer-copy">© {year} Pankeel Shah</span>
         </div>
-        <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open"></i></a></div>
-     </div>
-  </footer>
-    );
-  }
-}
 
-export default Footer;
+        {/* Social icons */}
+        <ul className="social-links footer-socials">
+          {socials.map(s => {
+            const Icon = SOCIAL_ICON_MAP[s.name] ?? Mail;
+            return (
+              <li key={s.name}>
+                <a href={s.url} target="_blank" rel="noopener noreferrer"
+                  aria-label={s.label} className="footer-social-icon">
+                  <Icon size={15} />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+
+        {/* Back to top */}
+        <div id="go-top">
+          <a href="#home" title="Back to Top" className="btn btn-outline btn-back-top">
+            <ArrowUp size={15} />
+            Back to Top
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+}
