@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Download, ArrowRight } from 'lucide-react';
-import { NAV_LINKS, TYPEWRITER_TITLES, HERO_STATS, SOCIAL_ICON_MAP, fadeUp } from '../constants';
+import { NAV_LINKS, TYPEWRITER_TITLES, HERO_STATS, SOCIAL_ICON_MAP } from '../constants';
 
 export default function Header({ data }) {
    const [scrolled, setScrolled] = useState(false);
