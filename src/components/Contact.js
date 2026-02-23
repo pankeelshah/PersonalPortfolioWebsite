@@ -42,7 +42,7 @@ export default function Contact({ data }) {
         <motion.div style={{ textAlign: 'center', marginTop: '40px' }}
           initial="hidden" whileInView="visible"
           viewport={{ once: true, margin: '-60px' }} variants={fadeUp} custom={2}>
-          <a href="mailto:shahx317@umn.edu" className="btn btn-primary"
+          <a href="mailto:pankeelshahs@gmail.com" className="btn btn-primary"
             style={{ display: 'inline-flex', fontSize: '15px', padding: '14px 32px' }}>
             <Mail size={17} /> Say Hello 👋
           </a>

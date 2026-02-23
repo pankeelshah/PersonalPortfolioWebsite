@@ -1,7 +1,6 @@
 import React from 'react';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, Mail } from 'lucide-react';
 import { SOCIAL_ICON_MAP } from '../constants';
-import { Mail } from 'lucide-react';
 
 export default function Footer({ data }) {
   const socials = data?.social ?? [];
