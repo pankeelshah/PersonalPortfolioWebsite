@@ -72,18 +72,13 @@
         "label": "LinkedIn"
       },
       {
-        "name": "twitter",
-        "url": "http://twitter.com/PankeelShah1",
-        "label": "Twitter"
-      },
-      {
         "name": "instagram",
         "url": "http://instagram.com/pankeelshah",
         "label": "Instagram"
       },
       {
         "name": "gmail",
-        "url": "mailto:shahx317@umn.edu",
+        "url": "mailto:pankeelshahs@gmail.com",
         "label": "Email"
       }
     ]
@@ -93,25 +88,55 @@
       {
         "school": "University of Minnesota Twin Cities",
         "degree": "B.S. Computer Science",
-        "graduated": "May 2021",
-        "description": "Relevant coursework: Algorithms & Data Structures, User Interface Design, Internet Programming, Intro to AI, Computer Vision, Database Systems, Software Engineering, Operating Systems, Animation & Game Planning, Discrete Structures."
+        "graduated": "September 2017 – December 2020",
+        "description": "Graduated with a 3.78 GPA. Relevant coursework: Algorithms & Data Structures, User Interface Design, Internet Programming, Intro to AI, Computer Vision, Database Systems, Software Engineering, Operating Systems, Animation & Game Planning, Discrete Structures."
       }
     ],
     "work": [
       {
+        "company": "Amazon",
+        "title": "Software Development Engineer",
+        "years": "June 2022 – Present",
+        "bullets": [
+          "Designed and developed Change Order and Purchase Order APIs using AWS Lambda, API Gateway, DynamoDB, S3, DocumentDB, SQS, and SNS, preventing $800K in vendor overpayments.",
+          "Developed critical React and TypeScript features for the Change Order and Purchase Order modules, improving financial oversight of $5.24B in construction budgets and resolving $50.6M in inflated budgets.",
+          "Designed and developed a Material Catalog API using AWS Lambda, S3, and Neptune, centralizing construction cost data with a 99.9% API success rate, handling over 500,000 API calls per day.",
+          "Led the evaluation and integration of an upstream team's location API, streamlining site onboarding and saving over 1,000 manual work hours per month."
+        ],
+        "tech": [
+          "AWS (Lambda, DynamoDB, SQS)",
+          "React",
+          "TypeScript",
+          "API Gateway"
+        ]
+      },
+      {
+        "company": "Target",
+        "title": "Software Engineer",
+        "years": "January 2021 – June 2022",
+        "bullets": [
+          "Created applications to automatically audit freight invoices worth over $100 million annually.",
+          "Designed and developed an event driven application designed to estimate loads for finance partners.",
+          "Worked with partner teams to create a test gift card generator and UI for internal testing."
+        ],
+        "tech": [
+          "Java",
+          "Spring Boot",
+          "Kotlin",
+          "Event Driven Architecture"
+        ]
+      },
+      {
         "company": "Target",
         "title": "Software Engineering Intern",
-        "years": "June 2020 – August 2020",
+        "years": "June 2020 – December 2020",
         "bullets": [
-          "Modernized barcode store procedures by developing Spring Boot and Kotlin microservices",
-          "Deployed a Praxis UI enabling generation and interpretation of random-weight barcodes",
-          "Engineered unit and integration tests using Spock and Groovy to verify application functionality"
+          "Modernized store procedures for barcodes by developing Spring Boot and Kotlin microservices.",
+          "Deployed a Praxis UI allowing users to generate and scan random weight barcodes."
         ],
         "tech": [
           "Kotlin",
           "Spring Boot",
-          "Groovy",
-          "Spock",
           "Praxis UI"
         ]
       },
@@ -120,9 +145,8 @@
         "title": "Software Engineering Intern",
         "years": "May 2019 – August 2019",
         "bullets": [
-          "Worked in a Verification Testing Scrum team, automating tests with .NET and Selenium for the CareLink Network",
-          "Designed human-readable acceptance tests using SpecFlow",
-          "Raised and tracked issues, collaborating with developers to satisfy website requirements"
+          "Designed and managed human-readable acceptance tests using SpecFlow.",
+          "Developed automated tests to verify requirements for the CareLink Network using .NET and Selenium."
         ],
         "tech": [
           ".NET",

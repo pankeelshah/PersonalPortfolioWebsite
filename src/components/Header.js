@@ -122,7 +122,6 @@ export default function Header({ data }) {
                   <h1 className="hero-name responsive-headline">
                      Hi, I'm{' '}
                      <span className="gradient-text">{name.split(' ')[0]}</span>
-                     {' '}<span>{name.split(' ').slice(1).join(' ')}</span>
                   </h1>
 
                   {/* Typewriter */}

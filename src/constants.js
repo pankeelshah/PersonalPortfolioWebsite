@@ -23,10 +23,10 @@ export const TYPEWRITER_TITLES = [
 
 // ─── Hero stats row ─────────────────────────────────────────────
 export const HERO_STATS = [
-    { value: '3+', label: 'Years Experience' },
-    { value: '20+', label: 'Projects Shipped' },
-    { value: '2', label: 'Internships' },
-    { value: '∞', label: 'Lines of Code' },
+    { value: '5+', label: 'Years Experience' },
+    { value: 'B.S.', label: 'Computer Science' },
+    { value: 'Distributed', label: 'Systems' },
+    { value: 'End-to-End', label: 'Engineering' },
 ];
 
 // ─── Social icon map ────────────────────────────────────────────
