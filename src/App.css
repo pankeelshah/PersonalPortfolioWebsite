@@ -1,11 +1,15 @@
 /* ─── App layout ─────────────────────────────────────────────── */
 .App {
     min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 section {
     position: relative;
     padding: 100px 0;
+    overflow: hidden;
 }
 
 .section-primary {
@@ -816,5 +820,73 @@ section {
 
     .hero-stats {
         gap: 24px;
+    }
+
+    .blob {
+        display: none;
+        /* Hide decorative blobs on small screens to ensure no overflow */
+    }
+}
+
+/* ─── Extra Small Mobile (Phones < 480px) ─────────────────── */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .hero-name {
+        font-size: 38px;
+        /* Slightly smaller for narrow screens */
+        line-height: 1.1;
+    }
+
+    .hero-typewriter {
+        font-size: 18px;
+        min-height: 32px;
+    }
+
+    .hero-ctas {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-ctas .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-stats {
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .hero-stat {
+        flex: 1 1 40%;
+    }
+
+    .experience-card {
+        padding: 16px 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        /* Force 1 column if not already */
+    }
+
+    .portfolio-item {
+        max-width: 100%;
+    }
+
+    .item-wrap {
+        height: 160px;
+    }
+
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 32px;
     }
 }
